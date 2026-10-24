@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="brayanbusiness — vêtements pour hommes à Abidjan. Découvrez nos modèles et commandez sur WhatsApp.">
+<meta name="theme-color" content="#111111">
+<title>brayanbusiness — Le style à votre portée</title>
+<style>
+:root{--black:#111;--gold:#e8b84d;--cream:#f7f6f2;--muted:#6b7280;--line:#e7e5e0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:#fff}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+header{position:sticky;top:0;z-index:10;background:#111;color:#fff;border-bottom:1px solid #2a2a2a}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:16px}
+.brand{font-weight:900;font-size:1.25rem;letter-spacing:-.5px}.brand span{color:var(--gold)}.brand-mark{color:var(--gold);margin-right:8px}
+nav{display:flex;gap:22px;font-size:.92rem}nav a:hover{color:var(--gold)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 18px;font-weight:800;background:var(--gold);color:#111}
+.menu-btn{display:none;background:transparent;color:#fff;border:1px solid #444;border-radius:8px;padding:8px}
+.hero{background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.54)),url('https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1800&q=85') center 38%/cover;color:#fff}
+.hero-inner{max-width:1150px;min-height:440px;margin:auto;padding:70px 20px;display:flex;align-items:center}
+.hero-copy{max-width:570px}.eyebrow{color:var(--gold);font-size:.8rem;letter-spacing:2px;font-weight:800;text-transform:uppercase}
+h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:.98;letter-spacing:-2px;margin:15px 0 18px}h1 span{color:var(--gold)}
+.hero p{font-size:1.08rem;line-height:1.6;color:#eee;max-width:490px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn-outline{display:inline-flex;align-items:center;justify-content:center;border:1px solid #aaa;border-radius:999px;padding:12px 18px;font-weight:800;color:#fff}
+.trust-row{display:flex;gap:20px;flex-wrap:wrap;margin-top:28px;color:#eee;font-size:.88rem}.trust-row span{display:flex;align-items:center;gap:7px}
+section{max-width:1150px;margin:auto;padding:54px 20px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}.section-head h2{margin:0;font-size:clamp(1.7rem,4vw,2.4rem);letter-spacing:-.8px}.section-head p{color:var(--muted);margin:8px 0 0}.kicker{font-size:.75rem;letter-spacing:1.6px;color:#98711f;font-weight:900;text-transform:uppercase}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.category{border:1px solid var(--line);border-radius:16px;padding:20px 16px;background:var(--cream);transition:.2s}.category:hover{transform:translateY(-3px);border-color:var(--gold)}
+.category .emoji{font-size:2rem}.category h3{margin:10px 0 5px;font-size:1rem}.category p{margin:0;color:var(--muted);font-size:.84rem}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.filter{border:1px solid var(--line);background:white;padding:9px 14px;border-radius:999px}.filter.active,.filter:hover{background:#111;color:white;border-color:#111}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column}.product img{width:100%;aspect-ratio:4/4.7;object-fit:cover;background:#eee}.product-info{padding:15px;display:flex;flex-direction:column;gap:9px;flex:1}.tag{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:#927020;font-weight:900}.product h3{font-size:1rem;margin:0}.product p{font-size:.85rem;line-height:1.4;color:var(--muted);margin:0}.price{font-size:1.1rem;font-weight:900}.sizes{font-size:.8rem;color:#555}.order-btn{margin-top:auto;border:0;background:#111;color:white;border-radius:9px;padding:11px;font-weight:800}.order-btn:hover{background:#252525}.notice{background:#fff7e5;border:1px solid #f1d99d;border-radius:12px;padding:13px 15px;font-size:.86rem;line-height:1.5;color:#59471f}
+.about{background:var(--cream);max-width:none}.about-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:54px 20px}.about h2{font-size:2.2rem;letter-spacing:-1px;margin:8px 0 15px}.about p{color:#555;line-height:1.7}.benefits{display:grid;gap:12px}.benefit{display:flex;gap:12px;align-items:flex-start;background:white;border:1px solid var(--line);padding:16px;border-radius:12px}.check{background:#e7f7ed;color:#128044;width:28px;height:28px;display:grid;place-items:center;border-radius:50%;flex-shrink:0;font-weight:900}
+.contact-box{background:#111;color:#fff;border-radius:20px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:24px}.contact-box h2{margin:0 0 8px}.contact-box p{margin:0;color:#ddd;line-height:1.6}
+footer{background:#111;color:#fff;padding:32px 20px}.footer-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.footer-inner p{color:#bbb;font-size:.86rem;line-height:1.6}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:15;background:#20c463;color:#fff;border-radius:999px;padding:14px 18px;font-weight:900;box-shadow:0 8px 25px #0003}
+@media(max-width:800px){nav{display:none;position:absolute;top:62px;left:0;right:0;background:#111;padding:18px 20px;flex-direction:column;border-top:1px solid #333}nav.open{display:flex}.menu-btn{display:block}.nav-cta{display:none}.hero-inner{min-height:490px;padding:55px 20px}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-info{padding:12px}.about-inner{grid-template-columns:1fr;gap:22px}.contact-box{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:390px){.products{grid-template-columns:1fr}.product img{aspect-ratio:4/3}.hero h1{letter-spacing:-1px}.trust-row{gap:12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#accueil"><span class="brand-mark">✦</span>brayan<span>business</span></a>
+    <nav id="mainNav"><a href="#accueil">Accueil</a><a href="#boutique">Boutique</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="#boutique">Découvrir la boutique →</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="accueil" style="max-width:none;padding:0">
+  <div class="hero-inner"><div class="hero-copy">
+    <div class="eyebrow">Mode homme · Abidjan</div>
+    <h1>Le style<br><span>à votre portée.</span></h1>
+    <p>Des vêtements pour hommes modernes, élégants et tendance. Trouve ton style, compose ta tenue et commande simplement.</p>
+    <div class="hero-actions"><a class="btn" href="#boutique">Découvrir les modèles <span>→</span></a><a class="btn-outline" href="#contact">Nous contacter</a></div>
+    <div class="trust-row"><span>✓ Paiement à la livraison</span><span>✓ Retrait possible</span><span>✓ Commande WhatsApp</span></div>
+  </div></div>
+</section>
+<section>
+  <div class="section-head"><div><div class="kicker">Choisis ton style</div><h2>Nos catégories</h2><p>Des essentiels faciles à porter, au quotidien comme pour sortir.</p></div></div>
+  <div class="categories">
+    <a class="category" href="#boutique" data-jump="T-shirts & Polos"><div class="emoji">👕</div><h3>T-shirts & polos</h3><p>Le confort au quotidien</p></a>
+    <a class="category" href="#boutique" data-jump="Chemises"><div class="emoji">👔</div><h3>Chemises</h3><p>Un look soigné</p></a>
+    <a class="category" href="#boutique" data-jump="Pantalons"><div class="emoji">👖</div><h3>Pantalons & jeans</h3><p>Le bon ajustement</p></a>
+    <a class="category" href="#boutique" data-jump="Vestes"><div class="emoji">🧥</div><h3>Vestes & ensembles</h3><p>Affirme ton style</p></a>
+  </div>
+</section>
+<section id="boutique" style="padding-top:10px">
+  <div class="section-head"><div><div class="kicker">Sélection brayanbusiness</div><h2>Nos produits</h2><p>Choisis un article pour nous envoyer ta demande sur WhatsApp.</p></div></div>
+  <div class="notice"><strong>À personnaliser avant publication :</strong> les articles et prix ci-dessous sont des exemples de démonstration. Remplace-les par tes vrais produits, prix, tailles et photos. Le numéro WhatsApp doit aussi être configuré.</div>
+  <div class="filters" id="filters">
+    <button class="filter active" data-filter="Tous">Tout voir</button>
+    <button class="filter" data-filter="T-shirts & Polos">T-shirts & polos</button>
+    <button class="filter" data-filter="Chemises">Chemises</button>
+    <button class="filter" data-filter="Pantalons">Pantalons & jeans</button>
+    <button class="filter" data-filter="Vestes">Vestes</button>
+  </div>
+  <div class="products" id="products">
+    <article class="product" data-category="T-shirts & Polos"><img src="https://images.unsplash.com/photo-1625910513413-5fc45e2d4c9a?auto=format&fit=crop&w=800&q=85" alt="Polo noir pour homme"><div class="product-info"><span class="tag">Essentiel</span><h3>Polo homme classique</h3><p>Un basique élégant pour tous les jours.</p><div class="price">8 000 FCFA</div><div class="sizes">Tailles : M, L, XL, XXL</div><button class="order-btn" data-product="Polo homme classique" data-price="8 000 FCFA">Commander sur WhatsApp</button></div></article>
+    <article class="product" data-category="T-shirts & Polos"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=85" alt="T-shirt blanc pour homme"><div class="product-info"><span class="tag">Casual</span><h3>T-shirt premium</h3><p>Simple, propre et facile à assortir.</p><div class="price">6 000 FCFA</div><div class="sizes">Tailles : M, L, XL</div><button class="order-btn" data-product="T-shirt premium" data-price="6 000 FCFA">Commander sur WhatsApp</button></div></article>
+    <article class="product" data-category="Chemises"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=85" alt="Chemise élégante pour homme"><div class="product-info"><span class="tag">Élégance</span><h3>Chemise élégante</h3><p>Pour le travail, les sorties et les occasions.</p><div class="price">10 000 FCFA</div><div class="sizes">Tailles : M, L, XL, XXL</div><button class="order-btn" data-product="Chemise élégante" data-price="10 000 FCFA">Commander sur WhatsApp</button></div></article>
+    <article class="product" data-category="Pantalons"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=85" alt="Jean bleu pour homme"><div class="product-info"><span class="tag">Tendance</span><h3>Jean tendance</h3><p>Une coupe facile à porter au quotidien.</p><div class="price">12 000 FCFA</div><div class="sizes">Tailles : 28 à 36</div><button class="order-btn" data-product="Jean tendance" data-price="12 000 FCFA">Commander sur WhatsApp</button></div></article>
+  </div>
+</section>
+<div class="about" id="apropos"><div class="about-inner"><div><div class="kicker">À propos</div><h2>Ton style.<br>Ta confiance.</h2><p><strong>brayanbusiness</strong> est une boutique de vêtements pour hommes basée à Abidjan. Notre objectif : t'aider à trouver des pièces qui correspondent à ton style, avec une commande simple et un contact direct.</p><p>Tu peux commander sur WhatsApp et convenir avec nous du paiement à la livraison ou du retrait, selon les modalités disponibles.</p></div><div class="benefits"><div class="benefit"><span class="check">✓</span><div><strong>Commande simple</strong><br><small>Contact direct via WhatsApp.</small></div></div><div class="benefit"><span class="check">✓</span><div><strong>Paiement à la livraison ou au retrait</strong><br><small>Confirme les modalités avant de commander.</small></div></div><div class="benefit"><span class="check">✓</span><div><strong>Conseils sur les tailles</strong><br><small>Demande les mesures et disponibilités.</small></div></div></div></div></div>
+<section id="contact"><div class="contact-box"><div><div class="kicker">On passe commande ?</div><h2>Un modèle t'intéresse ?</h2><p>Écris-nous pour vérifier le stock, la taille, le prix et les options de retrait ou de livraison à Abidjan.</p></div><a class="btn" href="#" id="contactWhatsApp">Écrire sur WhatsApp ↗</a></div></section>
+</main>
+<footer><div class="footer-inner"><div><a class="brand" href="#accueil"><span class="brand-mark">✦</span>brayan<span>business</span></a><p>Le style à votre portée.<br>Vêtements pour hommes · Abidjan, Côte d’Ivoire</p></div><div><strong>Informations</strong><p>Commandes sur WhatsApp<br>Paiement à la livraison ou au retrait<br>© <span id="year"></span> brayanbusiness</p></div><div><strong>Contact</strong><p>WhatsApp : numéro à configurer<br>Zone : Abidjan et alentours</p></div></div></footer>
+<a class="wa-float" id="floatWhatsApp" href="#">☏ Commander</a>
+<script>
+/* IMPORTANT : remplace 2250700000000 par ton numéro WhatsApp au format international, sans +, espaces ni tirets.
+   Exemple de format Côte d'Ivoire : 22507XXXXXXXX (utilise ton vrai numéro). */
+const WHATSAPP_NUMBER = "2250700000000";
+function openWhatsApp(message){
+  if(!WHATSAPP_NUMBER || WHATSAPP_NUMBER==="2250700000000"){
+    alert("Le numéro WhatsApp de démonstration doit être remplacé dans le fichier index.html avant de recevoir les commandes.");
+    return;
+  }
+  window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank","noopener");
+}
+document.querySelectorAll(".order-btn").forEach(btn=>btn.addEventListener("click",()=>{
+  openWhatsApp("Bonjour brayanbusiness ! Je suis intéressé(e) par : "+btn.dataset.product+" ("+btn.dataset.price+").\nTaille : \nCouleur : \nCommune à Abidjan : \nLivraison ou retrait : ");
+}));
+document.querySelectorAll("[data-filter]").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll("[data-filter]").forEach(b=>b.classList.remove("active"));btn.classList.add("active");
+  document.querySelectorAll(".product").forEach(card=>card.style.display=(btn.dataset.filter==="Tous"||card.dataset.category===btn.dataset.filter)?"flex":"none");
+}));
+document.querySelectorAll("[data-jump]").forEach(link=>link.addEventListener("click",()=>{
+  const filter=document.querySelector('[data-filter="'+link.dataset.jump+'"]'); if(filter)filter.click();
+}));
+document.getElementById("contactWhatsApp").addEventListener("click",e=>{e.preventDefault();openWhatsApp("Bonjour brayanbusiness ! Je voudrais connaître les vêtements disponibles et les modalités de commande à Abidjan.");});
+document.getElementById("floatWhatsApp").addEventListener("click",e=>{e.preventDefault();openWhatsApp("Bonjour brayanbusiness ! Je voudrais découvrir vos vêtements pour hommes.");});
+document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("mainNav").classList.toggle("open"));
+document.querySelectorAll("#mainNav a").forEach(a=>a.addEventListener("click",()=>document.getElementById("mainNav").classList.remove("open")));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
